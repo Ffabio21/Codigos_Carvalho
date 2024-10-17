@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corvette para fãs</title>
+    <link rel="stylesheet" href="styles_cadastro.css">
+    <link rel="icon" href="imagens/logo_corvette.ico" type="image/x-icon">
+</head>
+<body>
+    <h1><b>Genealogia do Corvette</b></h1>
+    <nav>
+        <ul>
+            <li><a href="primeiro_entregável.html"> Home</a></li>
+            <li><a href="cadastro.html"> Cadastro</a></li>
+            <li><a href="galeria_fotos.html"> Galeria de fotos</a></li>
+        </ul>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToQVz0Uqg85Rm02wXdXqrd4n_bxFBcuA_jLQ&s" alt="logo corvette">
+    </nav>
+    <br />
+<h2>Cadastro para fãs</h2>
+<form>
+    <!--id serve para quando eu for referenciar no label, com for, e ao clicar no nome, também ir para a caixa de preeenchimento-->
+    <label for="campo_nome">Nome: </label>
+    <input id="campo_nome" type="text" placeholder="nome completo" required>
+    <br />
+    <br />
+    <label for="campo_email">Email: </label>
+    <input id="campo_email" type="email" placeholder="email" required>
+    <br />
+    <br />
+    <label for="campo_senha1">Senha: </label>
+    <input id="campo_senha1" type="password" placeholder="digite uma senha forte" required>
+    <br />
+    <br />
+    <label for="campo_senha2">Senha: </label>
+    <input id="campo_senha2" type="password" placeholder="repita a senha" required>
+    <br><br>
+    <h3>Selecione seu sexo</h3>
+    <input type="radio" id="male" name="sexo" value="masculino">
+    <label for="male">Masculino</label>
+    <br><br>
+    <input type="radio" id="female" name="sexo" value="feminino">
+    <label for="female">Feminino</label>
+    <br><br>
+    <input type="radio" id="undefined" name="sexo" value="indefinido">
+    <label for="undefined">Prefiro não dizer</label>
+    <br><br>
+    <h3>Nos diga por que voce é um fã do Corvette</h3>
+    <textarea name="opiniao" placeholder="Eu amo o Corvette porque..." rows="15" cols="55" required></textarea>
+    <br><br>
+    <input type="checkbox" id="item1" name="concordancia" value="concordo" required>
+    <label for="item1">Concordo com os termos de consentimento</label>
+    <br>
+    <ul><a href="termo_consentimento.html" target="-blank">Termos de consentimento</a> </ul>
+    <input type="submit" value="Cadastrar">
+    <br><br>
+</form>
+
+
+</body>
+</html>
