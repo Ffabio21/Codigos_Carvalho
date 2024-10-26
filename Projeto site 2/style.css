@@ -1,0 +1,159 @@
+/*PRINCIPAL*/
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: Helvetica;
+    background: linear-gradient(to right, #eee,#e4c78f );
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+/*CABEÇALHO*/
+#header{
+    background-color: rgb(172, 39, 39, 0.8);
+    color: #fff;
+    border: 3px solid rgb(0, 0, 0,0.4);
+    font-weight: bold;
+    font-size: 5ch;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+}
+#header p{
+    padding:20px;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin:0px;
+}
+ul li{
+    margin-right: 20px;
+    font-size:1ch;
+}
+ul li a{
+    text-decoration: none;
+    color: #eee;
+}
+ul li a:hover{
+    color: rgb(0, 17, 255);
+}
+/*grid fantasma para a fixed*/
+#fantasma{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding:120px;
+}
+/*IMAGENS LATERAIS*/
+
+#item-1{
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-image: url('./imagens/ramon-dino.png');
+    width: 25vh;
+    background-size: contain;
+}
+#item-2{
+    grid-column-start: 5;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-image: url('./imagens/isa-nunes.png');
+    width: 25vh;
+    background-size: contain;
+}
+/*BOTÃO DE COMPRAR*/
+.btn{
+    display: block;
+    width: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #605bdb;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #020676;
+}
+/*ALEATORIOS*/
+h3{
+    margin: 0px;
+}
+.details{
+    margin: 0px;
+    font-size: small;
+}
+.card{
+    padding: 20px;
+}
+.product-image{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; /* Oculta partes da imagem que ultrapassam o bloco */
+    background-repeat: no-repeat;
+}
+
+/*IMAGENS DOS FÁRMACOS*/
+#img-1{
+    background-image: url('./imagens/durateston.png');
+    height: 25vh;
+}
+#img-2{
+    background-image: url('./imagens/deca.png');
+    height: 25vh;
+}
+#img-3{
+    background-image: url('./imagens/hemogenin.png');
+    height: 25vh;
+}
+#img-4{
+    background-image: url('./imagens/oxandrolona.png');
+    height: 25vh;
+}
+#img-5{
+    background-image: url('./imagens/potenay.png');
+    height: 25vh;
+}
+#img-6{
+    background-image: url('./imagens/strol.png');
+    height: 25vh;
+}
+#img-7{
+    background-image: url('./imagens/testex.png');
+    height: 25vh;
+}
+#img-8{
+    background-image: url('./imagens/trembolona.png');
+    height: 25vh;
+}
+#img-9{
+    background-image: url('./imagens/tpc.png');
+    height: 25vh;
+}
+/*RODAPÉ*/
+#footer{
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: x-large;
+    background-color: rgb(172, 39, 39);
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
